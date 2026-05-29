@@ -1,0 +1,12 @@
+# Dependencias
+node_modules/
+
+# Compilación
+dist/
+out/
+*.tsbuildinfo
+
+# Logs y variables de entorno
+npm-debug.log*
+.env
+.DS_Store
