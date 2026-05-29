@@ -1,4 +1,3 @@
-// @ts-nocheck
 // ============================================================
 //  ELUX — Motor de Cálculo Lumínico
 //  Punto a punto (CIE 140) + corrección por interreflexiones
@@ -182,10 +181,11 @@ export function calculateLighting(
     value: val,
     segs: marchingSquares(grid, GR, GC, a, b, val),
   }))
+  const Uo = Em > 0 ? minV / Em : 0
 
   return {
     grid, GR, GC,
-    Em, Emin: minV, Emax: maxV, Uo: minV / Em,
+    Em, Emin: minV, Emax: maxV, Uo,
     totalW: totalWatts, totalLm: totalLumens, DPEA, isolines,
   }
 }

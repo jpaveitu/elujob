@@ -22,8 +22,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "exclude": [
-    "src/engine/lightingEngine.ts",
-    "src/components/RoomCanvas.tsx"
-  ]
+  "exclude": []
 }
